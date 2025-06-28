@@ -1,0 +1,81 @@
+.delete-product-container {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delete-product-container h2 {
+  color: #c92a2a;
+  margin-bottom: 24px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.delete-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirm-btn {
+  background-color: #c92a2a;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #a4161a;
+}
+
+.cancel-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #ccc;
+}
+
+/* Responsivlik */
+@media (max-width: 600px) {
+  .delete-product-container {
+    margin: 50px 20px;
+    padding: 24px;
+  }
+
+  .delete-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .confirm-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}

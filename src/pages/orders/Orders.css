@@ -1,0 +1,106 @@
+.orders-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.orders-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #3f37c9;
+  font-size: 24px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #f3f3f3;
+  color: #222;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.orders-table td:last-child {
+  text-align: center;
+}
+
+.orders-table td:nth-child(5) {
+  text-align: right;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #f9f9f9;
+  transition: background 0.2s;
+}
+
+/* Status ranglari */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  color: white;
+  text-transform: capitalize;
+}
+
+.status.yangi {
+  background-color: #28a745;
+}
+
+.status.jarayonda {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.status.yetkazilgan {
+  background-color: #007bff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .orders-container {
+    padding: 20px;
+  }
+
+  .orders-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .orders-table th,
+  .orders-table td {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
